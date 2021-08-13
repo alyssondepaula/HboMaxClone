@@ -75,7 +75,7 @@ const AuthRoutes = () => {
         
         />
         <Tab.Screen 
-        name="Go" 
+        name="FreeSearch" 
         component={FreeSearch} 
         options={{
 
@@ -86,7 +86,7 @@ const AuthRoutes = () => {
         
         />
         <Tab.Screen 
-        name="Do" 
+        name="FreeAccount" 
         component={FreeAccount} 
         options={{
 

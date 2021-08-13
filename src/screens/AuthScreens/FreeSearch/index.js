@@ -1,5 +1,5 @@
-import React, {useRef, useMemo, useState, useEffect} from 'react';
-import { Animated, StyleSheet, Alert, StatusBar } from 'react-native';
+import React, {useRef, useMemo, useState} from 'react';
+import { Animated, StyleSheet, StatusBar } from 'react-native';
 import BackgroundGradient from '../../../components/BackgroundGradient';
 import { ListMovies } from '../../../services/FakeServices/ListMovies';
 import Feather from 'react-native-vector-icons/Feather';
@@ -89,35 +89,11 @@ const FreeSearch = () => {
         { useNativeDriver: true })}
         scrollEventThrottle={16}
         style={{ paddingTop:80, alignSelf: 'center', }}
-       // contentContainerStyle={{alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}}
-
-
-      
-        
-        
     >
     </Animated.FlatList>
     <StatusBar barStyle='light-content' backgroundColor='#000'/>
   </BackgroundGradient>);
 }
 
-const styles = StyleSheet.create({
-  header:{
-    backgroundColor: 'rgba(19,19,19,0.95)',
-    position: 'absolute',
-    opacity: 1,
-    height: 70,
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 10
-  },
-  box:{
-    height: 270,
-    backgroundColor: '#DDD',
-    margin: 7,
-    borderRadius: 5
-  }
-});
 
 export default FreeSearch;
